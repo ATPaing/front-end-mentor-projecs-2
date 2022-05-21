@@ -48,9 +48,7 @@ window.addEventListener('resize', () => {
     if(this.innerWidth > 1060){
         comments.forEach(c => c.style.display = 'flex')
     }else if(this.innerWidth < 556){
-        removeAllCarouselBulletBackground()
         carouselBullets.forEach((cb,i) => {
-            carouselBullets[1].classList.add('carousel-bullet-active')
             if(!cb.classList.contains('carousel-bullet-active')){
                 comments[i].style.display = 'none'
             }
